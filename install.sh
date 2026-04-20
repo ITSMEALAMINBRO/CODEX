@@ -3,7 +3,7 @@ clear
 mkdir -p $HOME/.CODEX
 mkdir -p $HOME/.Codex-simu
 mkdir -p $HOME/.toolx
-# dx color
+# color
 r='\033[1;91m'
 p='\033[1;95m'
 y='\033[1;93m'
@@ -12,7 +12,7 @@ n='\033[1;0m'
 b='\033[1;94m'
 c='\033[1;96m'
 
-# dx Symbol
+# Symbol
 X='\033[1;92m[\033[1;00m⎯꯭̽𓆩\033[1;92m]\033[1;96m'
 D='\033[1;92m[\033[1;00m〄\033[1;92m]\033[1;93m'
 E='\033[1;92m[\033[1;00m×\033[1;92m]\033[1;91m'
@@ -21,7 +21,7 @@ C='\033[1;92m[\033[1;00m</>\033[1;92m]\033[92m'
 lm='\033[96m▱▱▱▱▱▱▱▱▱▱▱▱\033[0m〄\033[96m▱▱▱▱▱▱▱▱▱▱▱▱\033[1;00m'
 dm='\033[93m▱▱▱▱▱▱▱▱▱▱▱▱\033[0m〄\033[93m▱▱▱▱▱▱▱▱▱▱▱▱\033[1;00m'
 
-# dx icon
+# icon
 OS="\uf6a6"
 HOST="\uf6c3"
 KER="\uf83c"
@@ -110,10 +110,8 @@ start() {
     TOTAL_CHARS=0
     texts=(
         "「 CODEX STARTED 」"
-        "「 HELLO DEAR USER I'M DX-SIMU 」"
-        "「 CODEX WILL PROTECT YOU 」"
+        "「 WELCOME DEAR USER 」"
         "「 GOODBYE 」"
-        "「 ENJOY OUR CODEX 」"
         "「............... 」"
     )
     for t in "${texts[@]}"; do
@@ -392,7 +390,7 @@ dxnetcheck() {
     echo -e "                       ⊂(___)づ"
     echo
     echo -e "                ${g}╔════════════════╗"
-    echo -e "                ${g}║ ${n}</>  ${c}CODEX-X${g}   ║"
+    echo -e "                ${g}║ ${n} </>  ${c}CODE-X${g}   ║"
     echo -e "                ${g}╚════════════════╝"
     echo -e "  ${g}╔════════════════════════════════════════════╗"
     echo -e "  ${g}║  ${y} Checking Your Internet Connection¡ ${g}      ║"
@@ -503,15 +501,12 @@ banner() {
     clear
     echo
     echo
-    echo -e "   ${y}░█████╗░░█████╗░██████╗░███████╗██╗░░██╗"
-    echo -e "   ${y}██╔══██╗██╔══██╗██╔══██╗██╔════╝╚██╗██╔╝"
-    echo -e "   ${y}██║░░╚═╝██║░░██║██║░░██║█████╗░░░╚███╔╝░"
-    echo -e "   ${c}██║░░██╗██║░░██║██║░░██║██╔══╝░░░██╔██╗░"
-    echo -e "   ${c}╚█████╔╝╚█████╔╝██████╔╝███████╗██╔╝╚██╗"
-    echo -e "   ${c}░╚════╝░░╚════╝░╚═════╝░╚══════╝╚═╝░░╚═╝${n}"
-    echo -e "${y}               +-+-+-+-+-+-+-+-+"
-    echo -e "${c}               |D|X|-|C|O|D|E|X|"
-    echo -e "${y}               +-+-+-+-+-+-+-+-+${n}"
+    echo -e "              ${y}╔═══╗╔═══╗╔═══╗╔═══╗╔═╗╔═╗"
+    echo -e "              ${y}║╔═╗║║╔═╗║╚╗╔╗║║╔══╝╚╗╚╝╔╝"
+    echo -e "              ${y}║║─╚╝║║─║║─║║║║║╚══╗─╚╗╔╝"
+    echo -e "              ${c}║║─╔╗║║─║║─║║║║║╔══╝─╔╝╚╗"
+    echo -e "              ${c}║╚═╝║║╚═╝║╔╝╚╝║║╚══╗╔╝╔╗╚╗"
+    echo -e "              ${c}╚═══╝╚═══╝╚═══╝╚═══╝╚═╝╚═╝${n}"
     echo
     if [ $random_number -eq 0 ]; then
         echo -e "${b}╭════════════════════════⊷"
@@ -524,7 +519,7 @@ banner() {
     fi
     echo
     echo -e "${b}╭══ ${g}〄 ${y}ᴄᴏᴅᴇx ${g}〄"
-    echo -e "${b}┃❁ ${g}ᴄʀᴇᴀᴛᴏʀ: ${y}ᴅx-ᴄᴏᴅᴇx"
+    echo -e "${b}┃❁ ${g}ᴀᴜᴛʜᴏʀ: ${y}ᴍᴏʜᴀᴍᴍᴀᴅ ᴀʟᴀᴍɪɴ"
     echo -e "${b}┃❁ ${g}ᴅᴇᴠɪᴄᴇ: ${y}${VENDOR} ${MODEL}"
     echo -e "${b}╰┈➤ ${g}Hey ${y}Dear"
     echo
@@ -595,15 +590,12 @@ setupx() {
 banner2() {
     echo
     echo
-    echo -e "   ${y}░█████╗░░█████╗░██████╗░███████╗██╗░░██╗"
-    echo -e "   ${y}██╔══██╗██╔══██╗██╔══██╗██╔════╝╚██╗██╔╝"
-    echo -e "   ${y}██║░░╚═╝██║░░██║██║░░██║█████╗░░░╚███╔╝░"
-    echo -e "   ${c}██║░░██╗██║░░██║██║░░██║██╔══╝░░░██╔██╗░"
-    echo -e "   ${c}╚█████╔╝╚█████╔╝██████╔╝███████╗██╔╝╚██╗"
-    echo -e "   ${c}░╚════╝░░╚════╝░╚═════╝░╚══════╝╚═╝░░╚═╝${n}"
-    echo -e "${y}               +-+-+-+-+-+-+-+-+"
-    echo -e "${c}               |D|X|-|C|O|D|E|X|"
-    echo -e "${y}               +-+-+-+-+-+-+-+-+${n}"
+    echo -e "              ${y}╔═══╗╔═══╗╔═══╗╔═══╗╔═╗╔═╗"
+    echo -e "              ${y}║╔═╗║║╔═╗║╚╗╔╗║║╔══╝╚╗╚╝╔╝"
+    echo -e "              ${y}║║─╚╝║║─║║─║║║║║╚══╗─╚╗╔╝"
+    echo -e "              ${c}║║─╔╗║║─║║─║║║║║╔══╝─╔╝╚╗"
+    echo -e "              ${c}║╚═╝║║╚═╝║╔╝╚╝║║╚══╗╔╝╔╗╚╗"
+    echo -e "              ${c}╚═══╝╚═══╝╚═══╝╚═══╝╚═╝╚═╝${n}"
     echo
     if [ $random_number -eq 0 ]; then
         echo -e "${b}╭════════════════════════⊷"
@@ -616,7 +608,7 @@ banner2() {
     fi
     echo
     echo -e "${b}╭══ ${g}〄 ${y}ᴄᴏᴅᴇx ${g}〄"
-    echo -e "${b}┃❁ ${g}ᴄʀᴇᴀᴛᴏʀ: ${y}ᴅx-ᴄᴏᴅᴇx"
+    echo -e "${b}┃❁ ${g}ᴀᴜᴛʜᴏʀ: ${y}ᴍᴏʜᴀᴍᴍᴀᴅ ᴀʟᴀᴍɪɴ"
     echo -e "${b}╰┈➤ ${g}Hey ${y}Dear"
     echo
     echo -e "${c}╭════════════════════════════════════════════════⊷"
@@ -692,9 +684,9 @@ if [ -d "/data/data/com.termux/files/usr/" ]; then
                     echo -e "\n ${g}[${n}${HOST}${g}] ${c}Wait for opening Telegram..!${n}"
                     sleep 1
                     if command -v termux-open >/dev/null 2>&1; then
-                        termux-open "https://t.me/Codexownerbot"
+                        termux-open "https://t.me/ALAMIN2K7"
                     else
-                        xdg-open "https://t.me/Codexownerbot" 2>/dev/null
+                        xdg-open "https://t.me/ALAMIN2K7" 2>/dev/null
                     fi
                     echo -e "\n ${g}[${n}${HOMES}${g}] ${c}Switching to Free Usage to continue..!${n}"
                     sleep 2
@@ -725,7 +717,7 @@ else
             echo -e "\n ${g}[${n}${HOST}${g}] ${c}Wait for opening Telegram..!${n}"
             sleep 1
             if command -v xdg-open >/dev/null 2>&1; then
-                xdg-open "https://t.me/Codexownerbot"
+                xdg-open "https://t.me/ALAMIN2K7"
             fi
             echo -e "\n ${g}[${n}${HOMES}${g}] ${c}Switching to Free Usage to continue..!${n}"
             sleep 2
